@@ -7,11 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6261F1DF249738D100696680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1DE249738D100696680 /* main.m */; };
+		6261F1E524973AEC00696680 /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1E424973AEC00696680 /* PaymentGateway.m */; };
+		6261F1E824973C2900696680 /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1E724973C2900696680 /* PaypalPaymentService.m */; };
+		6261F1EB24973C3700696680 /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1EA24973C3700696680 /* StripePaymentService.m */; };
+		6261F1EE24973C4400696680 /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1ED24973C4400696680 /* AmazonPaymentService.m */; };
+		6261F1F124974C6000696680 /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1F024974C6000696680 /* ApplePaymentService.m */; };
 		6291C06324901A8F00FFE6C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6291C06224901A8F00FFE6C2 /* main.m */; };
 		6291C06B24901ACD00FFE6C2 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 6291C06A24901ACD00FFE6C2 /* Box.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6261F1CF249738AB00696680 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6261F1DA249738D100696680 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6291C05D24901A8F00FFE6C2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -24,6 +48,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6261F1D1249738AB00696680 /* Lab10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab10; sourceTree = BUILT_PRODUCTS_DIR; };
+		6261F1DC249738D100696680 /* Payments */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Payments; sourceTree = BUILT_PRODUCTS_DIR; };
+		6261F1DE249738D100696680 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6261F1E324973AEC00696680 /* PaymentGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		6261F1E424973AEC00696680 /* PaymentGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
+		6261F1E624973C2900696680 /* PaypalPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaypalPaymentService.h; sourceTree = "<group>"; };
+		6261F1E724973C2900696680 /* PaypalPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaypalPaymentService.m; sourceTree = "<group>"; };
+		6261F1E924973C3700696680 /* StripePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StripePaymentService.h; sourceTree = "<group>"; };
+		6261F1EA24973C3700696680 /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
+		6261F1EC24973C4400696680 /* AmazonPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
+		6261F1ED24973C4400696680 /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		6261F1EF24974C6000696680 /* ApplePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
+		6261F1F024974C6000696680 /* ApplePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
 		6291C05F24901A8F00FFE6C2 /* Lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab2; sourceTree = BUILT_PRODUCTS_DIR; };
 		6291C06224901A8F00FFE6C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6291C06924901ACD00FFE6C2 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
@@ -31,6 +68,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6261F1CE249738AB00696680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6261F1D9249738D100696680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6291C05C24901A8F00FFE6C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +92,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6261F1DD249738D100696680 /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				6261F1DE249738D100696680 /* main.m */,
+				6261F1EC24973C4400696680 /* AmazonPaymentService.h */,
+				6261F1ED24973C4400696680 /* AmazonPaymentService.m */,
+				6261F1EF24974C6000696680 /* ApplePaymentService.h */,
+				6261F1F024974C6000696680 /* ApplePaymentService.m */,
+				6261F1E924973C3700696680 /* StripePaymentService.h */,
+				6261F1EA24973C3700696680 /* StripePaymentService.m */,
+				6261F1E624973C2900696680 /* PaypalPaymentService.h */,
+				6261F1E724973C2900696680 /* PaypalPaymentService.m */,
+				6261F1E324973AEC00696680 /* PaymentGateway.h */,
+				6261F1E424973AEC00696680 /* PaymentGateway.m */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
 		6291C05624901A8F00FFE6C2 = {
 			isa = PBXGroup;
 			children = (
 				6291C06124901A8F00FFE6C2 /* Lab2 */,
+				6261F1DD249738D100696680 /* Payments */,
 				6291C06024901A8F00FFE6C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				6291C05F24901A8F00FFE6C2 /* Lab2 */,
+				6261F1D1249738AB00696680 /* Lab10 */,
+				6261F1DC249738D100696680 /* Payments */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +142,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6261F1D0249738AB00696680 /* Lab10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6261F1D7249738AB00696680 /* Build configuration list for PBXNativeTarget "Lab10" */;
+			buildPhases = (
+				6261F1CD249738AB00696680 /* Sources */,
+				6261F1CE249738AB00696680 /* Frameworks */,
+				6261F1CF249738AB00696680 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab10;
+			productName = Lab10;
+			productReference = 6261F1D1249738AB00696680 /* Lab10 */;
+			productType = "com.apple.product-type.tool";
+		};
+		6261F1DB249738D100696680 /* Payments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6261F1E0249738D100696680 /* Build configuration list for PBXNativeTarget "Payments" */;
+			buildPhases = (
+				6261F1D8249738D100696680 /* Sources */,
+				6261F1D9249738D100696680 /* Frameworks */,
+				6261F1DA249738D100696680 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Payments;
+			productName = Payments;
+			productReference = 6261F1DC249738D100696680 /* Payments */;
+			productType = "com.apple.product-type.tool";
+		};
 		6291C05E24901A8F00FFE6C2 /* Lab2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6291C06624901A8F00FFE6C2 /* Build configuration list for PBXNativeTarget "Lab2" */;
@@ -96,6 +202,12 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Tomona Sako";
 				TargetAttributes = {
+					6261F1D0249738AB00696680 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					6261F1DB249738D100696680 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					6291C05E24901A8F00FFE6C2 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -115,11 +227,33 @@
 			projectRoot = "";
 			targets = (
 				6291C05E24901A8F00FFE6C2 /* Lab2 */,
+				6261F1D0249738AB00696680 /* Lab10 */,
+				6261F1DB249738D100696680 /* Payments */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6261F1CD249738AB00696680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6261F1D8249738D100696680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6261F1DF249738D100696680 /* main.m in Sources */,
+				6261F1EE24973C4400696680 /* AmazonPaymentService.m in Sources */,
+				6261F1E524973AEC00696680 /* PaymentGateway.m in Sources */,
+				6261F1F124974C6000696680 /* ApplePaymentService.m in Sources */,
+				6261F1E824973C2900696680 /* PaypalPaymentService.m in Sources */,
+				6261F1EB24973C3700696680 /* StripePaymentService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6291C05B24901A8F00FFE6C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +266,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6261F1D5249738AB00696680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6261F1D6249738AB00696680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6261F1E1249738D100696680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6261F1E2249738D100696680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6291C06424901A8F00FFE6C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -264,6 +438,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6261F1D7249738AB00696680 /* Build configuration list for PBXNativeTarget "Lab10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6261F1D5249738AB00696680 /* Debug */,
+				6261F1D6249738AB00696680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6261F1E0249738D100696680 /* Build configuration list for PBXNativeTarget "Payments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6261F1E1249738D100696680 /* Debug */,
+				6261F1E2249738D100696680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6291C05A24901A8F00FFE6C2 /* Build configuration list for PBXProject "Lab2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

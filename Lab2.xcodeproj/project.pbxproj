@@ -15,6 +15,7 @@
 		6261F1F124974C6000696680 /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1F024974C6000696680 /* ApplePaymentService.m */; };
 		6291C06324901A8F00FFE6C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6291C06224901A8F00FFE6C2 /* main.m */; };
 		6291C06B24901ACD00FFE6C2 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 6291C06A24901ACD00FFE6C2 /* Box.m */; };
+		629D74A32499D47100C31F26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74A22499D47100C31F26 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		629D749E2499D47100C31F26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +75,8 @@
 		6291C06224901A8F00FFE6C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6291C06924901ACD00FFE6C2 /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
 		6291C06A24901ACD00FFE6C2 /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		629D74A02499D47100C31F26 /* Threelow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threelow; sourceTree = BUILT_PRODUCTS_DIR; };
+		629D74A22499D47100C31F26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6291C05C24901A8F00FFE6C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629D749D2499D47100C31F26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,6 +134,7 @@
 			children = (
 				6291C06124901A8F00FFE6C2 /* Lab2 */,
 				6261F1DD249738D100696680 /* Payments */,
+				629D74A12499D47100C31F26 /* Threelow */,
 				6291C06024901A8F00FFE6C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +145,7 @@
 				6291C05F24901A8F00FFE6C2 /* Lab2 */,
 				6261F1D1249738AB00696680 /* Lab10 */,
 				6261F1DC249738D100696680 /* Payments */,
+				629D74A02499D47100C31F26 /* Threelow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +158,14 @@
 				6291C06A24901ACD00FFE6C2 /* Box.m */,
 			);
 			path = Lab2;
+			sourceTree = "<group>";
+		};
+		629D74A12499D47100C31F26 /* Threelow */ = {
+			isa = PBXGroup;
+			children = (
+				629D74A22499D47100C31F26 /* main.m */,
+			);
+			path = Threelow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +222,23 @@
 			productReference = 6291C05F24901A8F00FFE6C2 /* Lab2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		629D749F2499D47100C31F26 /* Threelow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629D74A62499D47100C31F26 /* Build configuration list for PBXNativeTarget "Threelow" */;
+			buildPhases = (
+				629D749C2499D47100C31F26 /* Sources */,
+				629D749D2499D47100C31F26 /* Frameworks */,
+				629D749E2499D47100C31F26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Threelow;
+			productName = Threelow;
+			productReference = 629D74A02499D47100C31F26 /* Threelow */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +255,9 @@
 						CreatedOnToolsVersion = 11.5;
 					};
 					6291C05E24901A8F00FFE6C2 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					629D749F2499D47100C31F26 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -229,6 +278,7 @@
 				6291C05E24901A8F00FFE6C2 /* Lab2 */,
 				6261F1D0249738AB00696680 /* Lab10 */,
 				6261F1DB249738D100696680 /* Payments */,
+				629D749F2499D47100C31F26 /* Threelow */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +310,14 @@
 			files = (
 				6291C06324901A8F00FFE6C2 /* main.m in Sources */,
 				6291C06B24901ACD00FFE6C2 /* Box.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629D749C2499D47100C31F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629D74A32499D47100C31F26 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +493,26 @@
 			};
 			name = Release;
 		};
+		629D74A42499D47100C31F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		629D74A52499D47100C31F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -470,6 +548,15 @@
 			buildConfigurations = (
 				6291C06724901A8F00FFE6C2 /* Debug */,
 				6291C06824901A8F00FFE6C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629D74A62499D47100C31F26 /* Build configuration list for PBXNativeTarget "Threelow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629D74A42499D47100C31F26 /* Debug */,
+				629D74A52499D47100C31F26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

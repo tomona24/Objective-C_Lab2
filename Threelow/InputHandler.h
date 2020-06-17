@@ -1,5 +1,5 @@
 //
-//  Dice.h
+//  InputHandler.h
 //  Threelow
 //
 //  Created by Tomona Sako on 2020/06/16.
@@ -10,9 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Dice : NSObject
-@property NSInteger *currentValue;
-- (NSString *) rollDice;
+@interface InputHandler : NSObject
++ (NSString*) getUserInput : (NSString *)prompt;
 @end
 
 NS_ASSUME_NONNULL_END

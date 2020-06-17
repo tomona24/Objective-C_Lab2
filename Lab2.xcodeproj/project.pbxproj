@@ -17,6 +17,24 @@
 		6291C06B24901ACD00FFE6C2 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 6291C06A24901ACD00FFE6C2 /* Box.m */; };
 		629D74A32499D47100C31F26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74A22499D47100C31F26 /* main.m */; };
 		629D74A92499D5A600C31F26 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74A82499D5A600C31F26 /* Dice.m */; };
+		629D74B92499D74000C31F26 /* NSString+PigLatinization.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74B62499D74000C31F26 /* NSString+PigLatinization.m */; };
+		629D74BA2499D74000C31F26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74B72499D74000C31F26 /* main.m */; };
+		629D74DA2499D7A000C31F26 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74C82499D79F00C31F26 /* Question.m */; };
+		629D74DB2499D7A000C31F26 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74C92499D79F00C31F26 /* ScoreKeeper.m */; };
+		629D74DC2499D7A000C31F26 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74CC2499D79F00C31F26 /* AdditionQuestion.m */; };
+		629D74DD2499D7A000C31F26 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74CD2499D79F00C31F26 /* QuestionManager.m */; };
+		629D74DE2499D7A000C31F26 /* MultipleQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74CF2499D79F00C31F26 /* MultipleQuestion.m */; };
+		629D74DF2499D7A000C31F26 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74D02499D7A000C31F26 /* InputHandler.m */; };
+		629D74E02499D7A000C31F26 /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74D62499D7A000C31F26 /* QuestionFactory.m */; };
+		629D74E12499D7A000C31F26 /* DivisionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74D72499D7A000C31F26 /* DivisionQuestion.m */; };
+		629D74E22499D7A000C31F26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74D82499D7A000C31F26 /* main.m */; };
+		629D74E32499D7A000C31F26 /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74D92499D7A000C31F26 /* SubtractionQuestion.m */; };
+		629D74EB2499D7BC00C31F26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74EA2499D7BC00C31F26 /* main.m */; };
+		629D74F62499D7D600C31F26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74EF2499D7D500C31F26 /* main.m */; };
+		629D74F72499D7D600C31F26 /* Cook.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74F02499D7D600C31F26 /* Cook.m */; };
+		629D74F82499D7D600C31F26 /* Cook2.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74F12499D7D600C31F26 /* Cook2.m */; };
+		629D74F92499D7D600C31F26 /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74F42499D7D600C31F26 /* FoodTruck.m */; };
+		629D74FC2499D80F00C31F26 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74FB2499D80F00C31F26 /* InputHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +74,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		629D74AD2499D73400C31F26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		629D74BD2499D76700C31F26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		629D74E62499D7BC00C31F26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +125,41 @@
 		629D74A22499D47100C31F26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		629D74A72499D5A600C31F26 /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
 		629D74A82499D5A600C31F26 /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		629D74AF2499D73400C31F26 /* Lab13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab13; sourceTree = BUILT_PRODUCTS_DIR; };
+		629D74B62499D74000C31F26 /* NSString+PigLatinization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PigLatinization.m"; path = "../../Lab13/Lab13/NSString+PigLatinization.m"; sourceTree = "<group>"; };
+		629D74B72499D74000C31F26 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../Lab13/Lab13/main.m; sourceTree = "<group>"; };
+		629D74B82499D74000C31F26 /* NSString+PigLatinization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PigLatinization.h"; path = "../../Lab13/Lab13/NSString+PigLatinization.h"; sourceTree = "<group>"; };
+		629D74BF2499D76700C31F26 /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
+		629D74C72499D79F00C31F26 /* MultipleQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleQuestion.h; sourceTree = "<group>"; };
+		629D74C82499D79F00C31F26 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		629D74C92499D79F00C31F26 /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
+		629D74CA2499D79F00C31F26 /* QuestionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
+		629D74CB2499D79F00C31F26 /* DivisionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DivisionQuestion.h; sourceTree = "<group>"; };
+		629D74CC2499D79F00C31F26 /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		629D74CD2499D79F00C31F26 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
+		629D74CE2499D79F00C31F26 /* SubtractionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtractionQuestion.h; sourceTree = "<group>"; };
+		629D74CF2499D79F00C31F26 /* MultipleQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleQuestion.m; sourceTree = "<group>"; };
+		629D74D02499D7A000C31F26 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		629D74D12499D7A000C31F26 /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		629D74D22499D7A000C31F26 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		629D74D32499D7A000C31F26 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		629D74D42499D7A000C31F26 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
+		629D74D52499D7A000C31F26 /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
+		629D74D62499D7A000C31F26 /* QuestionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
+		629D74D72499D7A000C31F26 /* DivisionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DivisionQuestion.m; sourceTree = "<group>"; };
+		629D74D82499D7A000C31F26 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		629D74D92499D7A000C31F26 /* SubtractionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtractionQuestion.m; sourceTree = "<group>"; };
+		629D74E82499D7BC00C31F26 /* Foodtruck */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Foodtruck; sourceTree = BUILT_PRODUCTS_DIR; };
+		629D74EA2499D7BC00C31F26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		629D74EF2499D7D500C31F26 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../Lab/Lab9/Foodtruck/main.m; sourceTree = "<group>"; };
+		629D74F02499D7D600C31F26 /* Cook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
+		629D74F12499D7D600C31F26 /* Cook2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cook2.m; sourceTree = "<group>"; };
+		629D74F22499D7D600C31F26 /* Cook2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cook2.h; sourceTree = "<group>"; };
+		629D74F32499D7D600C31F26 /* Cook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cook.h; sourceTree = "<group>"; };
+		629D74F42499D7D600C31F26 /* FoodTruck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTruck.m; sourceTree = "<group>"; };
+		629D74F52499D7D600C31F26 /* FoodTruck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTruck.h; sourceTree = "<group>"; };
+		629D74FA2499D80F00C31F26 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		629D74FB2499D80F00C31F26 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +185,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		629D749D2499D47100C31F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629D74AC2499D73400C31F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629D74BC2499D76700C31F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629D74E52499D7BC00C31F26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,6 +239,9 @@
 				6291C06124901A8F00FFE6C2 /* Lab2 */,
 				6261F1DD249738D100696680 /* Payments */,
 				629D74A12499D47100C31F26 /* Threelow */,
+				629D74B02499D73400C31F26 /* Lab13 */,
+				629D74C02499D76700C31F26 /* Maths */,
+				629D74E92499D7BC00C31F26 /* Foodtruck */,
 				6291C06024901A8F00FFE6C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,6 +253,9 @@
 				6261F1D1249738AB00696680 /* Lab10 */,
 				6261F1DC249738D100696680 /* Payments */,
 				629D74A02499D47100C31F26 /* Threelow */,
+				629D74AF2499D73400C31F26 /* Lab13 */,
+				629D74BF2499D76700C31F26 /* Maths */,
+				629D74E82499D7BC00C31F26 /* Foodtruck */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,10 +274,63 @@
 			isa = PBXGroup;
 			children = (
 				629D74A22499D47100C31F26 /* main.m */,
+				629D74FA2499D80F00C31F26 /* InputHandler.h */,
+				629D74FB2499D80F00C31F26 /* InputHandler.m */,
 				629D74A72499D5A600C31F26 /* Dice.h */,
 				629D74A82499D5A600C31F26 /* Dice.m */,
 			);
 			path = Threelow;
+			sourceTree = "<group>";
+		};
+		629D74B02499D73400C31F26 /* Lab13 */ = {
+			isa = PBXGroup;
+			children = (
+				629D74B72499D74000C31F26 /* main.m */,
+				629D74B82499D74000C31F26 /* NSString+PigLatinization.h */,
+				629D74B62499D74000C31F26 /* NSString+PigLatinization.m */,
+			);
+			path = Lab13;
+			sourceTree = "<group>";
+		};
+		629D74C02499D76700C31F26 /* Maths */ = {
+			isa = PBXGroup;
+			children = (
+				629D74D52499D7A000C31F26 /* AdditionQuestion.h */,
+				629D74CC2499D79F00C31F26 /* AdditionQuestion.m */,
+				629D74CB2499D79F00C31F26 /* DivisionQuestion.h */,
+				629D74D72499D7A000C31F26 /* DivisionQuestion.m */,
+				629D74D32499D7A000C31F26 /* InputHandler.h */,
+				629D74D02499D7A000C31F26 /* InputHandler.m */,
+				629D74D82499D7A000C31F26 /* main.m */,
+				629D74C72499D79F00C31F26 /* MultipleQuestion.h */,
+				629D74CF2499D79F00C31F26 /* MultipleQuestion.m */,
+				629D74D22499D7A000C31F26 /* Question.h */,
+				629D74C82499D79F00C31F26 /* Question.m */,
+				629D74CA2499D79F00C31F26 /* QuestionFactory.h */,
+				629D74D62499D7A000C31F26 /* QuestionFactory.m */,
+				629D74D42499D7A000C31F26 /* QuestionManager.h */,
+				629D74CD2499D79F00C31F26 /* QuestionManager.m */,
+				629D74D12499D7A000C31F26 /* ScoreKeeper.h */,
+				629D74C92499D79F00C31F26 /* ScoreKeeper.m */,
+				629D74CE2499D79F00C31F26 /* SubtractionQuestion.h */,
+				629D74D92499D7A000C31F26 /* SubtractionQuestion.m */,
+			);
+			path = Maths;
+			sourceTree = "<group>";
+		};
+		629D74E92499D7BC00C31F26 /* Foodtruck */ = {
+			isa = PBXGroup;
+			children = (
+				629D74F32499D7D600C31F26 /* Cook.h */,
+				629D74F02499D7D600C31F26 /* Cook.m */,
+				629D74F22499D7D600C31F26 /* Cook2.h */,
+				629D74F12499D7D600C31F26 /* Cook2.m */,
+				629D74F52499D7D600C31F26 /* FoodTruck.h */,
+				629D74F42499D7D600C31F26 /* FoodTruck.m */,
+				629D74EF2499D7D500C31F26 /* main.m */,
+				629D74EA2499D7BC00C31F26 /* main.m */,
+			);
+			path = Foodtruck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +404,57 @@
 			productReference = 629D74A02499D47100C31F26 /* Threelow */;
 			productType = "com.apple.product-type.tool";
 		};
+		629D74AE2499D73400C31F26 /* Lab13 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629D74B32499D73400C31F26 /* Build configuration list for PBXNativeTarget "Lab13" */;
+			buildPhases = (
+				629D74AB2499D73400C31F26 /* Sources */,
+				629D74AC2499D73400C31F26 /* Frameworks */,
+				629D74AD2499D73400C31F26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab13;
+			productName = Lab13;
+			productReference = 629D74AF2499D73400C31F26 /* Lab13 */;
+			productType = "com.apple.product-type.tool";
+		};
+		629D74BE2499D76700C31F26 /* Maths */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629D74C32499D76700C31F26 /* Build configuration list for PBXNativeTarget "Maths" */;
+			buildPhases = (
+				629D74BB2499D76700C31F26 /* Sources */,
+				629D74BC2499D76700C31F26 /* Frameworks */,
+				629D74BD2499D76700C31F26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Maths;
+			productName = Maths;
+			productReference = 629D74BF2499D76700C31F26 /* Maths */;
+			productType = "com.apple.product-type.tool";
+		};
+		629D74E72499D7BC00C31F26 /* Foodtruck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629D74EC2499D7BC00C31F26 /* Build configuration list for PBXNativeTarget "Foodtruck" */;
+			buildPhases = (
+				629D74E42499D7BC00C31F26 /* Sources */,
+				629D74E52499D7BC00C31F26 /* Frameworks */,
+				629D74E62499D7BC00C31F26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foodtruck;
+			productName = Foodtruck;
+			productReference = 629D74E82499D7BC00C31F26 /* Foodtruck */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,6 +476,15 @@
 					629D749F2499D47100C31F26 = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					629D74AE2499D73400C31F26 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					629D74BE2499D76700C31F26 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					629D74E72499D7BC00C31F26 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = 6291C05A24901A8F00FFE6C2 /* Build configuration list for PBXProject "Lab2" */;
@@ -284,6 +504,9 @@
 				6261F1D0249738AB00696680 /* Lab10 */,
 				6261F1DB249738D100696680 /* Payments */,
 				629D749F2499D47100C31F26 /* Threelow */,
+				629D74AE2499D73400C31F26 /* Lab13 */,
+				629D74BE2499D76700C31F26 /* Maths */,
+				629D74E72499D7BC00C31F26 /* Foodtruck */,
 			);
 		};
 /* End PBXProject section */
@@ -323,7 +546,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				629D74A92499D5A600C31F26 /* Dice.m in Sources */,
+				629D74FC2499D80F00C31F26 /* InputHandler.m in Sources */,
 				629D74A32499D47100C31F26 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629D74AB2499D73400C31F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629D74B92499D74000C31F26 /* NSString+PigLatinization.m in Sources */,
+				629D74BA2499D74000C31F26 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629D74BB2499D76700C31F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629D74DB2499D7A000C31F26 /* ScoreKeeper.m in Sources */,
+				629D74DF2499D7A000C31F26 /* InputHandler.m in Sources */,
+				629D74E12499D7A000C31F26 /* DivisionQuestion.m in Sources */,
+				629D74DC2499D7A000C31F26 /* AdditionQuestion.m in Sources */,
+				629D74DA2499D7A000C31F26 /* Question.m in Sources */,
+				629D74DD2499D7A000C31F26 /* QuestionManager.m in Sources */,
+				629D74E02499D7A000C31F26 /* QuestionFactory.m in Sources */,
+				629D74E22499D7A000C31F26 /* main.m in Sources */,
+				629D74E32499D7A000C31F26 /* SubtractionQuestion.m in Sources */,
+				629D74DE2499D7A000C31F26 /* MultipleQuestion.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629D74E42499D7BC00C31F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629D74F82499D7D600C31F26 /* Cook2.m in Sources */,
+				629D74F62499D7D600C31F26 /* main.m in Sources */,
+				629D74EB2499D7BC00C31F26 /* main.m in Sources */,
+				629D74F92499D7D600C31F26 /* FoodTruck.m in Sources */,
+				629D74F72499D7D600C31F26 /* Cook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +781,66 @@
 			};
 			name = Release;
 		};
+		629D74B42499D73400C31F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		629D74B52499D73400C31F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		629D74C42499D76700C31F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		629D74C52499D76700C31F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		629D74ED2499D7BC00C31F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		629D74EE2499D7BC00C31F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2NMRBH7Y3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -563,6 +885,33 @@
 			buildConfigurations = (
 				629D74A42499D47100C31F26 /* Debug */,
 				629D74A52499D47100C31F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629D74B32499D73400C31F26 /* Build configuration list for PBXNativeTarget "Lab13" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629D74B42499D73400C31F26 /* Debug */,
+				629D74B52499D73400C31F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629D74C32499D76700C31F26 /* Build configuration list for PBXNativeTarget "Maths" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629D74C42499D76700C31F26 /* Debug */,
+				629D74C52499D76700C31F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629D74EC2499D7BC00C31F26 /* Build configuration list for PBXNativeTarget "Foodtruck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629D74ED2499D7BC00C31F26 /* Debug */,
+				629D74EE2499D7BC00C31F26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

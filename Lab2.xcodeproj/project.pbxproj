@@ -35,6 +35,7 @@
 		629D74F82499D7D600C31F26 /* Cook2.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74F12499D7D600C31F26 /* Cook2.m */; };
 		629D74F92499D7D600C31F26 /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74F42499D7D600C31F26 /* FoodTruck.m */; };
 		629D74FC2499D80F00C31F26 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74FB2499D80F00C31F26 /* InputHandler.m */; };
+		629D74FF2499E1C800C31F26 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 629D74FE2499E1C800C31F26 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -160,6 +161,8 @@
 		629D74F52499D7D600C31F26 /* FoodTruck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTruck.h; sourceTree = "<group>"; };
 		629D74FA2499D80F00C31F26 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		629D74FB2499D80F00C31F26 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		629D74FD2499E1C800C31F26 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		629D74FE2499E1C800C31F26 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +278,8 @@
 			children = (
 				629D74A22499D47100C31F26 /* main.m */,
 				629D74FA2499D80F00C31F26 /* InputHandler.h */,
+				629D74FD2499E1C800C31F26 /* GameController.h */,
+				629D74FE2499E1C800C31F26 /* GameController.m */,
 				629D74FB2499D80F00C31F26 /* InputHandler.m */,
 				629D74A72499D5A600C31F26 /* Dice.h */,
 				629D74A82499D5A600C31F26 /* Dice.m */,
@@ -546,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				629D74A92499D5A600C31F26 /* Dice.m in Sources */,
+				629D74FF2499E1C800C31F26 /* GameController.m in Sources */,
 				629D74FC2499D80F00C31F26 /* InputHandler.m in Sources */,
 				629D74A32499D47100C31F26 /* main.m in Sources */,
 			);

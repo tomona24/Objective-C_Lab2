@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSArray *dices;
 @property NSMutableDictionary *heldDices;
 -(instancetype)init;
-
+-(void)holdDie: (NSInteger *)value : (Dice *)dice;
+-(void)resetDice;
 @end
 
 NS_ASSUME_NONNULL_END

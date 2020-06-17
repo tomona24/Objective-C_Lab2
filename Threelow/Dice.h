@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Dice : NSObject
 @property NSInteger *currentValue;
 - (NSString *) rollDice;
+- (NSString *) rollDiceCheatly;
 @end
 
 NS_ASSUME_NONNULL_END

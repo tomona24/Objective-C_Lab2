@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GameController : NSObject
-@property NSArray *dices;
+@property (weak) NSArray *dices;
 @property NSMutableDictionary *heldDices;
 @property int takenCount;
 @property int rollCount;
@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)resetDice;
 -(int)calculateScore;
 -(void)rollDices;
+-(void)cheatRoll;
 
 @end
 

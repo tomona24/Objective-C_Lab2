@@ -36,4 +36,9 @@
             break;
     }
 }
+
+- (NSString *) rollDiceCheatly {
+    self.currentValue = 1;
+        return @"⚀";
+}
 @end

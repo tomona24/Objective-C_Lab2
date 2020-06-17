@@ -19,9 +19,19 @@
         Dice *d4 = [[Dice alloc] init];
         Dice *d5 = [[Dice alloc] init];
         _dices = @[d1, d2, d3, d4, d5];
-        _heldDices = [[NSMutableDictionary alloc] initWithCapacity:5];
+        _heldDices = [[NSMutableDictionary alloc] init];
     }
     return self;
+}
+-(void)cheatRoll {
+        self.takenCount = 0;
+    for (Dice *dice in self.dices) {
+        long num = [self.dices indexOfObject:dice];
+        if (self.heldDices[[NSString stringWithFormat: @"%ld", [self.dices indexOfObject:dice]]] == NULL) {
+            NSLog(@"Dice%d : %@", num + 1, [dice rollDiceCheatly]);
+        }
+    }
+    self.rollCount ++;
 }
 
 -(void)rollDices {
@@ -56,4 +66,7 @@
     }
     return score;
 }
+
+
+
 @end

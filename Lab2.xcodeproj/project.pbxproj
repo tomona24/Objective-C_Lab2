@@ -277,9 +277,9 @@
 			isa = PBXGroup;
 			children = (
 				629D74A22499D47100C31F26 /* main.m */,
-				629D74FA2499D80F00C31F26 /* InputHandler.h */,
 				629D74FD2499E1C800C31F26 /* GameController.h */,
 				629D74FE2499E1C800C31F26 /* GameController.m */,
+				629D74FA2499D80F00C31F26 /* InputHandler.h */,
 				629D74FB2499D80F00C31F26 /* InputHandler.m */,
 				629D74A72499D5A600C31F26 /* Dice.h */,
 				629D74A82499D5A600C31F26 /* Dice.m */,

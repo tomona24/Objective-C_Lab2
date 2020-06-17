@@ -15,7 +15,7 @@
     char *userInput = fgets(inputChars, 255, stdin);
     if (userInput != NULL) {
         return [[[NSString stringWithCString:inputChars encoding:NSUTF8StringEncoding] stringByTrimmingCharactersInSet:[
-                                                                                                NSCharacterSet whitespaceAndNewlineCharacterSet]]lowercaseString];
+                                                                                                                        NSCharacterSet whitespaceAndNewlineCharacterSet]]lowercaseString];
     }
     return NULL;
 }

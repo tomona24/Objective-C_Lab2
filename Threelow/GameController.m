@@ -19,21 +19,41 @@
         Dice *d4 = [[Dice alloc] init];
         Dice *d5 = [[Dice alloc] init];
         _dices = @[d1, d2, d3, d4, d5];
-        _heldDices = [NSMutableDictionary dictionaryWithCapacity:5];
-        
+        _heldDices = [[NSMutableDictionary alloc] initWithCapacity:5];
     }
     return self;
 }
 
+-(void)rollDices {
+    self.takenCount = 0;
+    for (Dice *dice in self.dices) {
+        long num = [self.dices indexOfObject:dice];
+        if (self.heldDices[[NSString stringWithFormat: @"%ld", [self.dices indexOfObject:dice]]] == NULL) {
+            NSLog(@"Dice%d : %@", num + 1, [dice rollDice]);
+        }
+    }
+    self.rollCount ++;
+}
+
 -(void)holdDie:(NSInteger *)value :(Dice *) dice {
-    long num = [self.dices indexOfObject:dice];
-    if (num == -1) {
-    [self.heldDices setObject:[NSNumber numberWithInt: value] forKey: [NSString stringWithFormat: @"%ld", num]];
+    NSString *num = [NSString stringWithFormat: @"%ld", [self.dices indexOfObject:dice]];
+    if (self.heldDices[num] == NULL) {
+        [self.heldDices setObject:[NSNumber numberWithInt: value] forKey: num];
+        self.takenCount ++;
     } else {
-        [self.heldDices removeObjectForKey: [NSString stringWithFormat: @"%ld", num]];
+        [self.heldDices removeObjectForKey: num];
     }
 }
 -(void)resetDice {
+    self.rollCount = 0;
     [self.heldDices removeAllObjects];
+}
+
+-(int)calculateScore {
+    int score = 0 ;
+    for (Dice *dice in self.dices) {
+        score = score + (int)dice.currentValue;
+    }
+    return score;
 }
 @end

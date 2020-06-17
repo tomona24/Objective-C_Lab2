@@ -18,6 +18,10 @@ int main(int argc, const char * argv[]) {
         NSString * userAnser = [InputHandler getUserInput:@"Enter your input :"];
         while ([userAnser  isEqual: @"roll"]) {
             
+            if([userAnser  isEqual: @"reset"]) {
+                [gc resetDice];
+            }
+            
             NSLog(@"Dice1: %@", [gc.dices[0] rollDice]);
 //            NSLog(@"Dice2: %@", [d2 rollDice]);
 //            NSLog(@"Dice3: %@", [d3 rollDice]);

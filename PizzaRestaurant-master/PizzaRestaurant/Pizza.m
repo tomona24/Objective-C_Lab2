@@ -71,7 +71,7 @@
     } else {
         toppigs = @" nothing";
     }
-    return [NSString stringWithFormat:@"Your %@ pizza with %@", size, toppigs];
+    return [NSString stringWithFormat:@"Here is a %@ pizza with %@", size, toppigs];
 }
 
 @end

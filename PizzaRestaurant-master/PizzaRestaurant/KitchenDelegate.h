@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "Pizza.h"
+#import "DeliveryService.h"
+
 @class Kitchen;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol KichenDelegate <NSObject>
 
+@property (nonatomic ,weak)DeliveryService * ds;
 -(BOOL) kitchen: (Kitchen *) kitchen shouldMakePizzaOfSize: (PizzaSize)size andToppings:(NSArray *)toppings;
 -(BOOL) kitchenShouldUpgradeOrder: (Kitchen *) kitchen;
 -(void) kitchenDidMakePizza: (Pizza *)pizza;

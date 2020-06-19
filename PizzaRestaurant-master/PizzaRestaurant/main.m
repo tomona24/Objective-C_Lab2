@@ -12,6 +12,7 @@
 #import "Pizza.h"
 #import "HateAnchoviesManager.h"
 #import "SecondManager.h"
+#import "DeliveryService.h"
 
 int main(int argc, const char * argv[])
 {
@@ -21,6 +22,7 @@ int main(int argc, const char * argv[])
         NSLog(@"Please pick your pizza size and toppings:");
         
         Kitchen *restaurantKitchen = [Kitchen new];
+        DeliveryService *dv = [[DeliveryService alloc]init];
         HateAnchoviesManager *firstManager = [[HateAnchoviesManager alloc]init];
         SecondManager *secondManager = [[SecondManager alloc]init];
         
@@ -57,10 +59,15 @@ int main(int argc, const char * argv[])
                 fgets (str2, 255, stdin);
                 inputString = [[[NSString alloc] initWithUTF8String:str2]stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
                 NSLog(@"User input was %@", inputString);
+                
                 if ([inputString isEqualToString: @"1"]) {
+                    firstManager.ds = dv;
                     restaurantKitchen.delegate = firstManager;
+
                 } else if ([inputString isEqualToString: @"2"]) {
+                    secondManager.ds = dv;
                     restaurantKitchen.delegate = secondManager;
+                
                 } else {
                     restaurantKitchen.delegate = NULL;
                 }
@@ -71,14 +78,16 @@ int main(int argc, const char * argv[])
                 topping.length = [commandWords count] - 1;
                 
                 pizza = [restaurantKitchen makePizzaWithSize: size toppings:[commandWords subarrayWithRange:topping]];
+                
+                if ([inputString isEqualToString: @"3"]) {
+                    [dv deliverPizza:pizza];
+                }
+
             }
-            if (pizza == NULL) {
-            NSLog(@"Sorry, the chef denied your order");
-            } else {
-            NSLog(@"%@", [pizza description]);
-            }
+
             // And then send some message to the kitchen...
-            
+
+        
         }
         
     }

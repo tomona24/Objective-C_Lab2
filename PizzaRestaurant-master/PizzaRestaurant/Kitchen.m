@@ -18,14 +18,25 @@
             if( [self.delegate kitchenShouldUpgradeOrder:self]) {
                 size = Large;
             }
+            
             pizza = [[Pizza alloc] initWithSize:size topping:toppings];
-            [self.delegate kitchenDidMakePizza:pizza];
+
         }else {
             pizza = NULL;
-        }}else {
-            NSLog(@"Delegate is NULL");
-            pizza = [[Pizza alloc] initWithSize:size topping:toppings];
         }
+    }
+    else {
+        pizza = [[Pizza alloc] initWithSize:size topping:toppings];
+    }
+
+    if (pizza == NULL) {
+        NSLog(@"Sorry, the chef denied your order");
+    } else {
+        NSLog(@"%@", [pizza description]);
+        if([self.delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
+        [self.delegate kitchenDidMakePizza:pizza];
+        }
+    }
     return pizza;
 }
 

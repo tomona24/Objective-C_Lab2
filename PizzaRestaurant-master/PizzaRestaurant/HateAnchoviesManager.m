@@ -10,6 +10,7 @@
 
 @implementation HateAnchoviesManager
 
+
 - (BOOL)kitchen:(nonnull Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(nonnull NSArray *)toppings {
     if ([toppings containsObject:@"anchovies"] || [toppings containsObject:@"Anchovies"]) {
         return NO;
@@ -18,11 +19,10 @@
 }
 
 - (void)kitchenDidMakePizza:(nonnull Pizza *)pizza {
-    
+    [self.ds deliverPizza:pizza];
 }
 
 - (BOOL)kitchenShouldUpgradeOrder:(nonnull Kitchen *)kitchen {
     return NO;
 }
-
 @end

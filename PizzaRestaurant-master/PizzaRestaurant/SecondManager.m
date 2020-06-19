@@ -10,12 +10,15 @@
 
 @implementation SecondManager
 
+
 - (BOOL)kitchen:(nonnull Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(nonnull NSArray *)toppings {
-    return NO;
+    return YES;
 }
 
 - (void)kitchenDidMakePizza:(nonnull Pizza *)pizza {
     NSLog(@"Thank you for your order! I upgraded the pizza!!");
+    
+    [self.ds deliverPizza:pizza];
 }
 
 - (BOOL)kitchenShouldUpgradeOrder:(nonnull Kitchen *)kitchen {

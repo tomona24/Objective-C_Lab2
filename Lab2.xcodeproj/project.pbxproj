@@ -10,6 +10,8 @@
 		6246914D249C2F0300605E19 /* KitchenDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6246914C249C2F0300605E19 /* KitchenDelegate.m */; };
 		62469153249C33E200605E19 /* HateAnchoviesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62469152249C33E200605E19 /* HateAnchoviesManager.m */; };
 		62469156249C35D000605E19 /* SecondManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62469155249C35D000605E19 /* SecondManager.m */; };
+		62469159249C4A5500605E19 /* DeliveryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 62469158249C4A5500605E19 /* DeliveryService.m */; };
+		6246915C249C4A6400605E19 /* DeliveryCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6246915B249C4A6400605E19 /* DeliveryCar.m */; };
 		6261F1DF249738D100696680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1DE249738D100696680 /* main.m */; };
 		6261F1E524973AEC00696680 /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1E424973AEC00696680 /* PaymentGateway.m */; };
 		6261F1E824973C2900696680 /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6261F1E724973C2900696680 /* PaypalPaymentService.m */; };
@@ -126,6 +128,10 @@
 		62469152249C33E200605E19 /* HateAnchoviesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HateAnchoviesManager.m; path = PizzaRestaurant/HateAnchoviesManager.m; sourceTree = "<group>"; };
 		62469154249C35D000605E19 /* SecondManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SecondManager.h; path = PizzaRestaurant/SecondManager.h; sourceTree = "<group>"; };
 		62469155249C35D000605E19 /* SecondManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SecondManager.m; path = PizzaRestaurant/SecondManager.m; sourceTree = "<group>"; };
+		62469157249C4A5500605E19 /* DeliveryService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeliveryService.h; path = PizzaRestaurant/DeliveryService.h; sourceTree = "<group>"; };
+		62469158249C4A5500605E19 /* DeliveryService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DeliveryService.m; path = PizzaRestaurant/DeliveryService.m; sourceTree = "<group>"; };
+		6246915A249C4A6400605E19 /* DeliveryCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeliveryCar.h; path = PizzaRestaurant/DeliveryCar.h; sourceTree = "<group>"; };
+		6246915B249C4A6400605E19 /* DeliveryCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DeliveryCar.m; path = PizzaRestaurant/DeliveryCar.m; sourceTree = "<group>"; };
 		6261F1D1249738AB00696680 /* Lab10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab10; sourceTree = BUILT_PRODUCTS_DIR; };
 		6261F1DC249738D100696680 /* Payments */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Payments; sourceTree = BUILT_PRODUCTS_DIR; };
 		6261F1DE249738D100696680 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -384,6 +390,10 @@
 				62469152249C33E200605E19 /* HateAnchoviesManager.m */,
 				62469154249C35D000605E19 /* SecondManager.h */,
 				62469155249C35D000605E19 /* SecondManager.m */,
+				6246915A249C4A6400605E19 /* DeliveryCar.h */,
+				6246915B249C4A6400605E19 /* DeliveryCar.m */,
+				62469157249C4A5500605E19 /* DeliveryService.h */,
+				62469158249C4A5500605E19 /* DeliveryService.m */,
 				62BF18B6249B3A18000AC1F3 /* Kitchen.h */,
 				62BF18B7249B3A18000AC1F3 /* Kitchen.m */,
 				628BAB89249BB0D700638809 /* Pizza.h */,
@@ -678,7 +688,9 @@
 			files = (
 				62BF18BA249B3A18000AC1F3 /* Kitchen.m in Sources */,
 				62469156249C35D000605E19 /* SecondManager.m in Sources */,
+				6246915C249C4A6400605E19 /* DeliveryCar.m in Sources */,
 				62469153249C33E200605E19 /* HateAnchoviesManager.m in Sources */,
+				62469159249C4A5500605E19 /* DeliveryService.m in Sources */,
 				6246914D249C2F0300605E19 /* KitchenDelegate.m in Sources */,
 				62BF18BB249B3A18000AC1F3 /* main.m in Sources */,
 				628BAB8B249BB0D800638809 /* Pizza.m in Sources */,

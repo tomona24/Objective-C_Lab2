@@ -1,5 +1,5 @@
 //
-//  HateAnchoviesManager.h
+//  DeliveryService.h
 //  PizzaRestaurant-master
 //
 //  Created by Tomona Sako on 2020/06/18.
@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Kitchen.h"
-
+#import "Pizza.h"
+#import "DeliveryCar.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HateAnchoviesManager : NSObject<KichenDelegate>
-@property (nonatomic ,weak)DeliveryService * ds;
+@interface DeliveryService : NSObject
+- (void)deliverPizza:(Pizza *)pizza;
+- (NSMutableArray *)pizzaDescription;
 
 @end
 

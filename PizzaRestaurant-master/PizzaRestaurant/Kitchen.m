@@ -20,7 +20,7 @@
             }
             
             pizza = [[Pizza alloc] initWithSize:size topping:toppings];
-
+            
         }else {
             pizza = NULL;
         }
@@ -28,13 +28,13 @@
     else {
         pizza = [[Pizza alloc] initWithSize:size topping:toppings];
     }
-
+    
     if (pizza == NULL) {
         NSLog(@"Sorry, the chef denied your order");
     } else {
         NSLog(@"%@", [pizza description]);
         if([self.delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
-        [self.delegate kitchenDidMakePizza:pizza];
+            [self.delegate kitchenDidMakePizza:pizza];
         }
     }
     return pizza;

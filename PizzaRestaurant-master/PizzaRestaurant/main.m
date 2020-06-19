@@ -48,7 +48,7 @@ int main(int argc, const char * argv[])
             if([firstInput isEqualToString:@"pepperoni"]) {
                 pizza = [Pizza largePepperoni];
             } else {
-            
+                
                 // choose Manager
                 NSLog(@"Which manager do you want to create your pizza? Type the number.");
                 NSLog(@"1. Chief Manager");
@@ -63,11 +63,11 @@ int main(int argc, const char * argv[])
                 if ([inputString isEqualToString: @"1"]) {
                     firstManager.ds = dv;
                     restaurantKitchen.delegate = firstManager;
-
+                    
                 } else if ([inputString isEqualToString: @"2"]) {
                     secondManager.ds = dv;
                     restaurantKitchen.delegate = secondManager;
-                
+                    
                 } else {
                     restaurantKitchen.delegate = NULL;
                 }
@@ -78,18 +78,11 @@ int main(int argc, const char * argv[])
                 topping.length = [commandWords count] - 1;
                 
                 pizza = [restaurantKitchen makePizzaWithSize: size toppings:[commandWords subarrayWithRange:topping]];
-                
                 if ([inputString isEqualToString: @"3"]) {
                     [dv deliverPizza:pizza];
                 }
-
             }
-
-            // And then send some message to the kitchen...
-
-        
         }
-        
     }
     return 0;
 }

@@ -22,12 +22,13 @@ typedef enum {
 @property (assign) PizzaSize pizzaSize;
 @property NSArray *toppings;
 
-- (instancetype)initWithSize:(PizzaSize) pizzaSize: (NSArray *) topping;
+- (instancetype)initWithSize:(PizzaSize) pizzaSize topping: (NSArray *) topping;
 
 +(Pizza *)largePepperoni;
 +(Pizza *)meatLoversWithSize: (PizzaSize)size;
 
 + (PizzaSize)stringToSize: (NSString *)input;
+- (NSString *)sizeToString: (PizzaSize)size;
 @end
 
 NS_ASSUME_NONNULL_END

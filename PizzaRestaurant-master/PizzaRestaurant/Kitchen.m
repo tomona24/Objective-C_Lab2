@@ -12,23 +12,21 @@
 
 - (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
 {
+    Pizza *pizza;
     if(self.delegate != NULL) {
-        Pizza *pizza;
         if([self.delegate kitchen:self shouldMakePizzaOfSize:size andToppings:toppings]) {
-            
             if( [self.delegate kitchenShouldUpgradeOrder:self]) {
-               pizza = [Pizza largePepperoni];
-            } else {
-                pizza = [[Pizza alloc] initWithSize:size :toppings];
+                size = Large;
             }
+            pizza = [[Pizza alloc] initWithSize:size topping:toppings];
+            [self.delegate kitchenDidMakePizza:pizza];
         }else {
             pizza = NULL;
+        }}else {
+            NSLog(@"Delegate is NULL");
+            pizza = [[Pizza alloc] initWithSize:size topping:toppings];
         }
-        
-        [self.delegate kitchenDidMakePizza:pizza];
-        return pizza;
-    }
-    return NULL;
+    return pizza;
 }
 
 

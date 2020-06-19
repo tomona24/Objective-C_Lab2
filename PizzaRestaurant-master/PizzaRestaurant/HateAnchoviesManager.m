@@ -11,7 +11,7 @@
 @implementation HateAnchoviesManager
 
 - (BOOL)kitchen:(nonnull Kitchen *)kitchen shouldMakePizzaOfSize:(PizzaSize)size andToppings:(nonnull NSArray *)toppings {
-    if([toppings indexOfObject:@"Anchovies"]) {
+    if ([toppings containsObject:@"anchovies"] || [toppings containsObject:@"Anchovies"]) {
         return NO;
     }
     return YES;

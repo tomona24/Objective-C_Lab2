@@ -55,16 +55,15 @@ int main(int argc, const char * argv[])
                 NSLog(@"> ");
                 char str2[255];
                 fgets (str2, 255, stdin);
-                inputString = [[[NSString alloc] initWithUTF8String:str2] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-                
-                if ([inputString isEqualToString:@"1"]) {
+                inputString = [[[NSString alloc] initWithUTF8String:str2]stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                NSLog(@"User input was %@", inputString);
+                if ([inputString isEqualToString: @"1"]) {
                     restaurantKitchen.delegate = firstManager;
-                } if ([inputString isEqualToString:@"2"]) {
+                } else if ([inputString isEqualToString: @"2"]) {
                     restaurantKitchen.delegate = secondManager;
                 } else {
                     restaurantKitchen.delegate = NULL;
-                }                
-                
+                }
                 
                 PizzaSize size = [Pizza stringToSize: firstInput];
                 NSRange topping;
@@ -72,6 +71,11 @@ int main(int argc, const char * argv[])
                 topping.length = [commandWords count] - 1;
                 
                 pizza = [restaurantKitchen makePizzaWithSize: size toppings:[commandWords subarrayWithRange:topping]];
+            }
+            if (pizza == NULL) {
+            NSLog(@"Sorry, the chef denied your order");
+            } else {
+            NSLog(@"%@", [pizza description]);
             }
             // And then send some message to the kitchen...
             

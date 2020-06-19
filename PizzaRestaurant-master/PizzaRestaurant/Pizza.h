@@ -10,18 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSInteger, PizzaSize) {
+typedef enum {
   Small,
   Medium,
   Large,
-};
+} PizzaSize;
 
-//typedef NS_ENUM(unsigned char, ToppingType) {
-//  Ham,
-//  Pineapple,
-//  Sesami,
-//  Jalapeno,
-//};
 
 @interface Pizza : NSObject
 
@@ -30,10 +24,10 @@ typedef NS_ENUM(NSInteger, PizzaSize) {
 
 - (instancetype)initWithSize:(PizzaSize) pizzaSize: (NSArray *) topping;
 
-+(instancetype)largePepperoni;
-+(instancetype)meatLoversWithSize: (PizzaSize)size;
++(Pizza *)largePepperoni;
++(Pizza *)meatLoversWithSize: (PizzaSize)size;
 
-
++ (PizzaSize)stringToSize: (NSString *)input;
 @end
 
 NS_ASSUME_NONNULL_END

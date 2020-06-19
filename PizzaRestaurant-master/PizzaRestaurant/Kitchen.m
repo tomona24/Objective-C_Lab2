@@ -10,9 +10,27 @@
 
 @implementation Kitchen
 
-/*- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
+- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
 {
-    
-}*/
+    if(self.delegate != NULL) {
+        Pizza *pizza;
+        if([self.delegate kitchen:self shouldMakePizzaOfSize:size andToppings:toppings]) {
+            
+            if( [self.delegate kitchenShouldUpgradeOrder:self]) {
+               pizza = [Pizza largePepperoni];
+            } else {
+                pizza = [[Pizza alloc] initWithSize:size :toppings];
+            }
+        }else {
+            pizza = NULL;
+        }
+        
+        [self.delegate kitchenDidMakePizza:pizza];
+        return pizza;
+    }
+    return NULL;
+}
+
+
 
 @end

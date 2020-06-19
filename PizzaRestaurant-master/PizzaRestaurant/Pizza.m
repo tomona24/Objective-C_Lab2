@@ -10,14 +10,23 @@
 
 @implementation Pizza
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
++ (PizzaSize)stringToSize: (NSString *) userInput {
+    PizzaSize size;
+    NSString *input = [userInput lowercaseString];
+//    if ([input isEqualToString:@"large"]) {
+//        size = Large;
+//    } else if([input isEqualToString:@"medium"]) {
+//        size = Medium;
+//    } else if([input isEqualToString:@"small"]) {
+//        size = Small;
+//    } else {
+//        size = NO;
+//    }
+//
+//    return size;
+    return NO;
 }
+
 
 - (instancetype)initWithSize:(PizzaSize) pizzaSize: (NSArray *) toppings
 {
@@ -30,33 +39,13 @@
 }
 
 
-
-typedef NS_ENUM(unsigned char, ToppingType) {
-  Ham,
-  Pineapple,
-  Sesami,
-  Jalapeno,
-};
-
-
-//- (NSString *)description {
-//  switch (_pizzaSize) {
-//    case Large:
-//      return @"Large";
-//    case Medium:
-//      return @"Middle";
-//    case Small:
-//      return @"Small";
-//  }
-//}
-
-+(instancetype)largePepperoni {
-    NSArray* topping = @[@(Pineapple), @(Jalapeno), @(Sesami)];
++(Pizza *)largePepperoni {
+    NSArray *topping = [NSArray arrayWithObjects:@"Pineapple", @"Pepperoni", @"Sesami", nil];
     return [[self alloc] initWithSize:Large :topping];
 }
 
-+(instancetype)meatLoversWithSize: (PizzaSize)size {
-    NSArray* topping = @[@(Ham), @(Jalapeno), @(Sesami)];
++(Pizza *)meatLoversWithSize: (PizzaSize)size {
+        NSArray *topping = [NSArray arrayWithObjects:@"Ham", @"Jalapeno", @"Sesami", nil];
     return [[self alloc] initWithSize:size :topping];
 }
 
